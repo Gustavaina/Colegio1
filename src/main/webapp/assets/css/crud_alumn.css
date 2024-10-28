@@ -1,0 +1,152 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #4CAF50;
+    margin: 20px 0;
+}
+
+form {
+    margin: 20px auto;
+    width: 60%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px auto; /* Centra los botones */
+    display: block; /* Hace que el botón se comporte como bloque */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin: 10px auto; /* Centra el botón */
+    display: block; /* Asegura que el botón ocupe todo el ancho */
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    text-transform: uppercase;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.editar-button {
+    font-size: 14px; /* Tamaño de la fuente */
+    padding: -90px 8px; /* Reduce aún más el padding */
+    border: 1px solid #007bff; /* Color del borde */
+    border-radius: 5px; /* Bordes redondeados opcionales */
+    background-color: #f8f9fa; /* Color de fondo */
+    color: #007bff; /* Color del texto */
+    line-height: 1.2; /* Reduce la altura de la línea */
+    transition: background-color 0.3s ease; /* Efecto suave al cambiar de color */
+}
+
+.editar-button:hover {
+    background-color: #e2e6ea; /* Color de fondo al pasar el cursor */
+}
+
+
+/* Estilo para los botones de editar y eliminar */
+td .button-group {
+    display: flex; /* Utiliza flexbox para alinear los botones */
+    justify-content: center; /* Centra el grupo de botones */
+    gap: 10px; /* Espacio entre los botones */
+}
+
+td button {
+    padding: 6px 12px; /* Reducido para hacer el botón más delgado */
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+td button:hover {
+    background-color: #d32f2f;
+}
+
+td form {
+    display: inline;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    input[type="text"], select {
+        width: calc(100% - 12px);
+    }
+
+    button {
+        width: 100%;
+    }
+
+    td button {
+        width: 100%;
+    }
+}

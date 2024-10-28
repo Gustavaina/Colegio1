@@ -1,0 +1,179 @@
+/* css de pagos*/
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    color: #666;
+    font-size: 14px;
+}
+
+.main-content-pago {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-pagar-targeta, .btn-yape {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-pagar-targeta:hover, .btn-yape:hover {
+    background-color: #45a049;
+}
+
+.terms-and-conditions {
+    margin-top: 20px;
+}
+
+.payment-panel {
+    text-align: center;
+}
+
+#card-payment-form,
+#yape-form {
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.payment-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.payment-icons img {
+    width: 50px;
+    margin: 0 10px;
+}
+
+button {
+    background-color: #6200ea;
+    color: #fff;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5e00d6;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.btn-yape {
+    background-color: #2ecc71;
+}
+
+.btn-yape:hover {
+    background-color: #27ae60;
+}
+
+.btn-pagar-targeta {
+    background-color: #3498db;
+}
+
+.btn-pagar-targeta:hover {
+    background-color: #2980b9;
+}
+
+.qr-code {
+    width: 150px;
+    margin: 20px auto;
+}
+
+.terms-total-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.terms-and-conditions label {
+    font-size: 14px;
+    color: #333;
+}
+
+.terms-and-conditions input {
+    margin-right: 10px;
+}
+
+.terms-total-container p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+@media screen and (max-width: 768px) {
+    .main-content-pago {
+        max-width: 90%;
+    }
+
+    .payment-icons img {
+        width: 40px;
+    }
+
+    .qr-code {
+        width: 100px;
+    }
+}

@@ -1,0 +1,60 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+.course-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4A90E2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.back-button:hover {
+    background-color: #357ABD;
+}
+.weeks {
+    margin-top: 20px;
+}
+.weeks h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.week {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.week h3 {
+    font-size: 22px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+.week p {
+    font-size: 16px;
+    margin: 0;
+}

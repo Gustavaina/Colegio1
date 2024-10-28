@@ -1,0 +1,507 @@
+
+
+/* Estilo global */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333; /* Color de texto general */
+  background-color: #f4f4f4;
+}
+
+/* Texto de las secciones */
+.texto-nosotros {
+  text-align: center; /* Centra el texto */
+  font-size: 1.2rem; /* Aumenta el tamaño de la fuente */
+  max-width: 800px; /* Limita el ancho máximo para un mejor centrado */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  padding: 20px; /* Añade un poco de espacio alrededor del texto */
+  line-height: 1.6; /* Mejora la legibilidad con mayor interlineado */
+  color: white; /* Cambia el color del texto a blanco */
+}
+
+.texto-nosotros h1 {
+  font-size: 2rem; /* Aumenta el tamaño del título */
+  margin-bottom: 20px; /* Añade espacio debajo del título */
+  color: white; /* Cambia el color del título a blanco */
+}
+
+/* Cuadro de la imagen */
+.cuadro-imagen {
+  text-align: center; /* Centra la imagen */
+  margin-top: 20px;
+}
+
+.cuadro-imagen img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Contenedor centralizado */
+.contenedor {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Encabezado */
+.encabezado {
+  position: relative; /* Habilita el uso de posición absoluta para los hijos */
+  background-color: #333; /* Color de fondo negro */
+  color: #fff;
+  overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
+}
+
+.contenedor-navegacion {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el contenido dentro del contenedor */
+  padding: 10 40px;
+}
+
+.contenido-navegacion {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; /* Alinea logo a la izquierda y el menú a la derecha */
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center; /* Alinea verticalmente el ícono y el texto */
+}
+
+.logo-icon {
+  margin-right: 10px; /* Espacio entre el ícono y el texto */
+}
+
+.logo h2 {
+  margin: 0;
+}
+
+.navegacion {
+  display: flex;
+  gap: 20px;
+}
+
+/* Encabezado de la página de inicio */
+.contenido-header {
+  position: relative;
+  overflow: hidden; /* Oculta cualquier contenido que se desborde */
+}
+
+.contenedor-encabezado {
+  position: relative; /* Habilita el uso de posición absoluta para los hijos */
+  display: flex;
+  flex-direction: column; /* Asegura que el contenido se apile verticalmente */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  height: 400px; /* Ajusta la altura según sea necesario */
+  color: #fff;
+}
+
+.texto-encabezado {
+  position: absolute;
+  z-index: 10; /* Asegura que el texto esté sobre la imagen */
+  max-width: 60%;
+}
+
+.texto-encabezado h2 {
+  margin-bottom: 20px;
+}
+
+/* Botones */
+.btn {
+  background-color: #2d8b1a; /* Color rojo */
+  color: #fff; /* Texto blanco */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #04f560; /* Rojo más oscuro para el hover */
+}
+
+.btn-rojo {
+  background-color: #dc3545;
+}
+
+.btn-rojo:hover {
+  background-color: #c82333;
+}
+
+/* Contenedor para centrar el botón de contacto */
+.btn-contacto {
+  text-align: center; /* Centra el contenido horizontalmente */
+  margin-top: 20px; /* Ajusta el espacio superior */
+}
+
+/* Imagen de fondo en la página de inicio */
+/*
+.imagen-fondo {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0; /* Asegura que la imagen esté detrás del texto 
+} */
+
+.imagen-fondo {
+  width: 100%;
+  height: 100%; /* Asegura que la imagen cubra toda el área */
+  object-fit: cover; /* Ajusta la imagen para que cubra todo el contenedor sin distorsionarse */
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0; /* Asegura que la imagen esté detrás del texto */
+}
+
+
+/* Formulario de Contacto */
+.formulario-contacto {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+.informacion-contacto {
+  flex: 0 0 400px; /* Ancho reducido del recuadro */
+  margin-right: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+}
+
+.informacion-contacto h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem; /* Tamaño del texto aumentado */
+}
+
+.informacion-contacto p {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.redes-sociales a {
+  color: #333;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.formulario {
+  margin-left: 20px;
+  flex: 1;
+}
+
+.input-formulario {
+  margin-bottom: 15px;
+}
+
+.input-formulario label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-formulario input,
+.input-formulario textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Pie de Página */
+.contenedor-piepagina {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 1200px;
+  border-top: 1px solid #ddd;
+}
+
+.info {
+  flex: 1;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.info:last-child {
+  margin-right: 0;
+}
+
+.redes-pie a {
+  margin-right: 10px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* pagina de reservas */  
+/* styles.css */
+
+/* Estilos generales para el contenedor de reservaciones */
+.contenedor-reservacion {
+display: flex;
+justify-content: space-between;
+margin-top: 20px;
+}
+
+/* Estilo para la sección de información de reservaciones */
+.informacion-reservacion {
+flex: 1;
+margin-right: 20px;
+padding: 20px;
+border: 1px solid #ccc; /* Gris claro */
+border-radius: 8px;
+background-color: #f9f9f9; /* Gris muy claro */
+text-align: center; /* Centra el texto */
+}
+
+/* Estilo para el formulario de reservaciones */
+.formulario-reservacion {
+flex: 2;
+background-color: #fff;
+border: 1px solid #ccc; /* Gris claro */
+border-radius: 8px;
+padding: 20px;
+}
+
+/* Estilo para los campos del formulario */
+.input-formulario {
+margin-bottom: 15px;
+}
+
+.input-formulario label {
+display: block;
+margin-bottom: 5px;
+color: #333; /* Gris oscuro para el texto */
+}
+
+.input-formulario input,
+.input-formulario textarea {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc; /* Gris claro */
+border-radius: 4px;
+}
+
+.input-formulario textarea {
+resize: vertical;
+}
+
+/* Estilo para el botón de envío */
+.btn-formulario {
+text-align: center;
+}
+
+.btn-rojo {
+background-color: #c8102e; /* Rojo */
+color: white;
+border: none;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 4px;
+}
+
+
+/* Estilo para el botón de Matricúlate */
+.btn-matriculate {
+  background-color: #217525; /* Color verde */
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.btn-matriculate:hover {
+  background-color: #0dee05; /* Verde más oscuro para el hover */
+}
+
+/* Estilo para cuadros de imágenes
+.cuadro-imagen {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cuadro-imagen img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/*
+.encabezado {
+  position: relative;
+  background-color: #333; /* Color de fondo negro 
+  color: #fff;
+  overflow: hidden;
+  padding: 20px 0; /* Aumenta el padding para hacer la línea más alta 
+  height: auto; /* Ajusta la altura si es necesario 
+}
+*/
+
+.navegacion a {
+  padding: 10px 20px; /* Ajusta el padding para los enlaces */
+  height: 40px; /* Asegura que todos los botones tengan la misma altura */
+  display: flex; /* Usa flexbox para alinear el contenido verticalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  justify-content: center; /* Centra el texto horizontalmente */
+}
+
+.btn-iniciar-sesion {
+  padding: 10px 20px; /* Mantén el mismo padding que los otros botones */
+  background-color: #dc3545; /* Color específico para el botón "MATRICÚLATE" */
+  color: #fff; /* Color del texto */
+  border-radius: 5px; /* Bordes redondeados */
+  height: 40px; /* Asegura que todos los botones tengan la misma altura */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+    background-color: #0052cc; /* Código de un azul similar */
+    background-image: url('img/blue.jpg'); /* Ruta relativa a la carpeta donde subas tu imagen */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white; /* Cambiar color de texto para que contraste */
+}
+
+
+/* Pie de Página */
+.contenedor-piepagina {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 1200px;
+  border-top: 1px solid #ddd;
+  color: white; /* Cambia el color del texto a blanco */
+  background-color: #333; /* Opcional: establece un fondo oscuro para el pie de página */
+}
+
+.info {
+  flex: 1;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.info:last-child {
+  margin-right: 0;  
+}
+
+.redes-pie a {
+  margin-right: 10px;
+  color: white; /* Asegura que los enlaces de las redes sociales también sean blancos */
+}
+
+
+
+/* Sección de Cursos */
+.contenedor-cursos {
+  text-align: center;
+  padding: 50px 20px;
+  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro translúcido */
+}
+
+.titulo-cursos {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #fff; /* Color blanco para el título */
+}
+
+.contenedor-cuadros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cuadro {
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+  backdrop-filter: blur(10px); /* Efecto de desenfoque */
+  color: #fff; /* Color de texto en blanco */
+  text-align: center;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.cuadro:hover {
+  transform: scale(1.05); /* Efecto de zoom */
+}
+
+.cuadro h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.cuadro p {
+  font-size: 1rem;
+}
+
+/* Imagen final debajo de los cursos */
+.imagen-final {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.imagen-final img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para las imágenes en la sección Conócenos */
+.cuadro-imagen img {
+  transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+.cuadro-imagen img:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen */
+}

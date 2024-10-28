@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+
+        <link href="bootstrap4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    </h:head>
+    <h:body>
+        <nav class="mb-4 navbar navbar-dark bg-dark navbar-expand-lg">
+            <a class="navbar-brand font-bold" href="#">REGISTROS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Controlador?codigo_usuario=admin123&amp;contrasena_usu=admin123&amp;accion=validarusuario">
+                            <i class=""></i> HOME
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-user"></i> ${codigo_usuario}
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-cyan" aria-labelledby="navbarDropdownMenuLink-4">
+                            <a class="dropdown-item" href="Controlador?accion=cerrarsesion">Log out</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <h:form id="frm1">
+            <p:panelGrid columns="2">
+                <p:outputLabel value="Seleccione un Alumno"/>
+                <h:selectOneMenu value="#{jsfController.selectedAlumnoId}">
+                    <f:selectItem itemLabel="--elegir--" itemValue=""/>
+                    <f:selectItems value="#{jsfController.listAlu}" />
+                    <p:ajax listener="#{jsfController.filtraPen}" update="frm2:pensionTable" />
+                </h:selectOneMenu>
+            </p:panelGrid>
+        </h:form>
+
+        <h:form id="frm2">
+            <p:dataTable id="pensionTable" value="#{jsfController.listpens}" var="pen" paginator="true" rows="6">
+                <p:column headerText="Nombre Alumno">
+                    <h:outputText value="#{pen.nombres_alu}" />
+                </p:column>
+                <p:column headerText="Mes">
+                    <h:outputText value="#{pen.pension_mes}" />
+                </p:column>
+                <p:column headerText="Monto">
+                    <h:outputText value="#{pen.pension_monto}" />
+                </p:column>
+                <p:column headerText="Descuento">
+                    <h:outputText value="#{pen.pension_descuento}" />
+                </p:column>
+                <p:column headerText="Mora">
+                    <h:outputText value="#{pen.pension_mora}" />
+                </p:column>
+                <p:column headerText="Fecha de Registro">
+                    <h:outputText value="#{pen.pension_fecha_registro}" />
+                </p:column>
+                <p:column headerText="Fecha de Vencimiento">
+                    <h:outputText value="#{pen.pension_fecha_vencimiento}" />
+                </p:column>
+                <p:column headerText="Estado">
+                    <h:outputText value="#{pen.pension_estado}" />
+                </p:column>
+            </p:dataTable>
+        </h:form>
+        
+         <script src="bootstrap4/js/bootstrap.min.js" type="text/javascript"></script>
+    </h:body>
+</html>

@@ -1,0 +1,136 @@
+/* stylesmatriculaa.css */
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Color de fondo claro */
+    color: #333; /* Color de texto */
+    line-height: 1.6;
+}
+
+/* Contenedor del formulario */
+.form-container {
+    max-width: 600px; /* Ancho máximo del contenedor */
+    margin: 50px auto; /* Centrado en la pantalla */
+    padding: 20px;
+    background: white; /* Fondo blanco para el formulario */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Títulos */
+h2 {
+    text-align: center; /* Centrado */
+    color: #4CAF50; /* Color verde para el título */
+    margin-bottom: 20px;
+}
+
+/* Estilo de los párrafos */
+p {
+    text-align: center; /* Centrado */
+    margin-bottom: 20px;
+}
+
+/* Fila del formulario */
+.form-row {
+    display: flex; /* Uso de flexbox para la disposición */
+    margin-bottom: 15px; /* Espaciado entre filas */
+}
+
+/* Grupo de formularios */
+.form-group {
+    flex: 1; /* Crecimiento para ocupar el espacio disponible */
+    margin-right: 10px; /* Margen entre grupos */
+}
+
+/* Último grupo de la fila */
+.form-group:last-child {
+    margin-right: 0; /* Sin margen derecho en el último elemento */
+}
+
+/* Estilo de los inputs */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Estilo de los botones */
+.submit-btn {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color de texto blanco */
+    padding: 10px 15px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+.submit-btn:hover {
+    background-color: #45a049; /* Color de fondo más oscuro al pasar el ratón */
+}
+
+/* Estilo para el formulario de resultados */
+.resultado {
+    margin-top: 20px; /* Espaciado superior */
+    padding: 20px;
+    background: #f9f9f9; /* Fondo gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Hacer el formulario responsivo */
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+    }
+
+    .form-group {
+        margin-right: 0; /* Sin margen en pantallas pequeñas */
+        margin-bottom: 10px; /* Espaciado entre grupos en pantallas pequeñas */
+    }
+}
+
+.form-row {
+    display: flex; /* Uso de flexbox para la disposición */
+    margin-bottom: 15px; /* Espaciado entre filas */
+}
+
+/* Grupo de formularios */
+.form-group {
+    flex: 1; /* Crecimiento para ocupar el espacio disponible */
+    margin-right: 10px; /* Margen entre grupos */
+}
+
+/* Último grupo de la fila */
+.form-group:last-child {
+    margin-right: 0; /* Sin margen derecho en el último elemento */
+}
+
+/* Estilo de los botones */
+.submit-btn {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color de texto blanco */
+    padding: 10px 15px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+.submit-btn:hover {
+    background-color: #45a049; /* Color de fondo más oscuro al pasar el ratón */
+}

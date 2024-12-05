@@ -19,7 +19,7 @@
                 <nav class="navegacion">
                     <a href="Inicio.jsp">Inicio</a>
                     <a href="Conocenos.jsp">Conócenos</a>
-                    <a href="apoderado.jsp" class="btn-matriculate">Matricúlate</a>
+                    <a href="RegistrarApoderado.jsp" class="btn-matriculate">Matricúlate</a>
                 </nav>
             </div>
         </div>

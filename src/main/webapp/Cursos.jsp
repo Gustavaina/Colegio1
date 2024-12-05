@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h1>MATRICULA</h1>
-        <button class="export-button">Exportar cursos</button>
+        <!--<button class="export-button">Exportar cursos</button>-->
         <div class="courses">
             <div class="course">
                 <a href="Geometria.jsp">

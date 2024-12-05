@@ -10,7 +10,7 @@
     <div class="error-container">
         <h1>Pago Fallido, Usted no tiene Saldo Suficiente</h1>
         <p>Lo sentimos, hubo un error al procesar tu pago. Por favor, inténtalo de nuevo.</p>
-        <a href="formulario_pagos.jsp" class="btn-intentar">Volver a intentar</a>
+        <a href="pagos2.jsp" class="btn-intentar">Volver a intentar</a>
     </div>
 </body>
 </html>

@@ -22,9 +22,19 @@ form {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-input[type="text"], select {
+form input[type="text"],
+form input[type="number"] {
     width: calc(100% - 22px);
     padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="number"], select {
+    width: calc(100% - 22px);
+    padding: 100px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 4px;

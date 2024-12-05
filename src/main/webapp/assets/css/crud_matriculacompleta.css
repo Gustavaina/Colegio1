@@ -1,0 +1,79 @@
+/* Fondo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f5e9; /* Verde claro */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Título */
+h2 {
+    text-align: center;
+    color: #1b5e20; /* Verde oscuro */
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+/* Contenedor de la tabla */
+.table-container {
+    width: 90%; /* Ancho de la tabla */
+    margin: 20px auto;
+    background-color: #ffffff; /* Fondo blanco */
+    border: 2px solid #1b5e20; /* Borde verde oscuro */
+    border-radius: 8px; /* Esquinas redondeadas */
+    overflow-x: auto; /* Scroll horizontal si es necesario */
+    padding: 10px; /* Espaciado interno */
+}
+
+/* Tabla */
+table {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    border-collapse: collapse; /* Elimina espacios entre celdas */
+    text-align: center; /* Centra el texto */
+    font-size: 14px; /* Tamaño del texto */
+}
+
+/* Encabezados de la tabla */
+th {
+    background-color: #1b5e20; /* Verde oscuro */
+    color: white; /* Texto blanco */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    padding: 12px; /* Espaciado interno */
+    border: 1px solid #145a14; /* Bordes entre encabezados */
+}
+
+/* Celdas */
+td {
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ddd; /* Bordes claros entre celdas */
+    font-size: 13px;
+    text-align: center; /* Centra el texto */
+}
+
+/* Alternar color de filas */
+tr:nth-child(odd) {
+    background-color: #f1f8e9; /* Verde muy claro */
+}
+
+tr:nth-child(even) {
+    background-color: #ffffff; /* Blanco */
+}
+
+/* Hover en filas */
+tr:hover {
+    background-color: #c8e6c9; /* Verde claro */
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    .table-container {
+        width: 95%;
+    }
+
+    th, td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}

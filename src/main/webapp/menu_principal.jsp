@@ -76,11 +76,12 @@
                                 Tablas
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="RegistroApoderados.jsp"><i class="icon ion-md-person lead mr-2"></i>Apoderados</a>
-                                <a class="dropdown-item" href="AlumnoListar.jsp"><i class="icon ion-md-people lead mr-2"></i>Alumnos</a>
-                                <a href="AulaListar.jsp" class="dropdown-item"><i class="icon ion-md-person lead mr-2"></i>Aulas </a>
-                                <a class="dropdown-item" href="CursoListar2.jsp"><i class="icon ion-md-apps lead mr-2"></i>Cursos Primaria</a>
-                                <a class="dropdown-item" href="CursoListar.jsp"><i class="icon ion-md-apps lead mr-2"></i>Cursos Secundaria</a>
+                                <a class="dropdown-item" href="RegistroApoderados.jsp"><i class="icon ion-md-person lead mr-2"></i> Apoderados </a>
+                                <a class="dropdown-item" href="AlumnoListar.jsp"><i class="icon ion-md-people lead mr-2"></i> Alumnos </a>
+                                <a href="AulaListar.jsp" class="dropdown-item"><i class="icon ion-md-person lead mr-2"></i> Aulas </a>
+                                <a class="dropdown-item" href="TurnoListar.jsp"><i class="icon ion-md-apps lead mr-2"></i> Turnos </a>
+                                <a class="dropdown-item" href="CursoListar.jsp"><i class="icon ion-md-apps lead mr-2"></i> Cursos </a>
+                                <a class="dropdown-item" href="MatriculaCompleta.jsp"><i class="icon ion-md-apps lead mr-2"></i> Matricula </a>
                                 <!--<a href="PensionListar.jsp" class="dropdown-item"><i class="icon ion-md-person lead mr-2"></i>Metodo de pago</a>
 
                                 <!--<a class="dropdown-item" href="SeccionListar.jsp"><i class="icon ion-md-person lead mr-2"></i>Secciones</a>
@@ -182,9 +183,9 @@
                                     <h1 class="font-weight-bold mb-0">${codigo_usuario}</h1>
                                     <p class="lead text-muted">Información</p>
                                 </div>
-                                <div class="col-lg-3 col-md-4 d-flex">
+                                <!--<div class="col-lg-3 col-md-4 d-flex">
                                     <button class="btn btn-primary w-100 align-self-center">Exportar Cursos</button>
-                                </div>
+                                </div>-->
                             </div>
                         </div>
                     </section>
